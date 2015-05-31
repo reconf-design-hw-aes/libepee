@@ -70,6 +70,10 @@
 
 #define DEV_NAME "/dev/sPciDriver"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /*****************************
  * function : get_pcie_cfg_mode
  * engineer : Jian Gong
@@ -203,4 +207,8 @@ int dma_board2host(unsigned int len, void *p_data);
  *****************************/
 int block_until_interrupt(int vector_num);
 
+
+#ifdef __cplusplus
+}
+#endif
 #endif

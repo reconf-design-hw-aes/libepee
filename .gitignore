@@ -65,4 +65,12 @@
 *.out
 *.app
 
-
+app/DMA_test
+app/DMA_test_unblocking
+app/INT_test
+app/INT_test_simple
+app/PIO_test
+app/reset_test
+app/speed_test_double_buf
+app/speed_test_memcpy
+app/zerocopy_test
