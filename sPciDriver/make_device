@@ -1,0 +1,9 @@
+#!/bin/bash
+rm -rf /dev/sPciDriver
+mknod /dev/sPciDriver c 241 1
+chown root /dev/sPciDriver
+chmod 666 /dev/sPciDriver
+ls -al /dev/sPciDriver
+insmod ./sPciDriver.ko
+lsmod | grep sPciDriver
+
